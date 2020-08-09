@@ -22,6 +22,10 @@ let convertClickFunc = () => {
     }
     
 }
+let songfunc = () => {
+    let song = document.getElementById('input_text');
+    song.value = '<div>\n<h1>Famous Russian song</h1>\n<h3>All together</h3>\n</br>Карусель, карусель начин<i>а-а-а-</i>ет рассказ.<br>\nЭто сказки, песни и веселье!<br>\nКарусель, карусель — это р<i>а-а-а-</i>дость для нас,<br>\nПрокатись на нашей карус<i>e-e-e-e-e-e-</i>ли<b>!</b>\n</div>';
+}
 let clearLeft = () => {
     let existingText = document.getElementById('input_text');
     existingText.value = '';
