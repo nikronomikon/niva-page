@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Home work number 5</title>
+</head>
+<body>
+    <section class="main_container">
+        <div class="child_container container_left">
+            <div class=" container_header">
+                <button name="clear_button_left" id="clear_button_left" onclick="clearLeft()">Clear</button>
+            </div>
+            <div class="text_container input_text">
+                <textarea name="textarea" id="input_text" placeholder="Enter your text here..." cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="child_container container_center">
+            <div class="inner_container">
+               <button id="convert_button" onclick="convertClickFunc()">Convert</button> 
+            </div>
+        </div>
+        <div class="child_container container_right">
+            <div class="container_header header_right">
+            <button name="clear_button_right" id="clear_button_right" onclick="clearRight()">Clear</button>
+            <select id="colorSelect" name="font_color" onclick="setColor()">
+                <option disabled selected hidden style="color: lightgrey; font-weight: 700;" >Choose color</option>
+                <option value="black" style="color: black;">Black</option>
+                <option value="blue" style="color: #2E97F2;">Blue</option>
+                <option value="coral" style="color: coral;">Coral</option>
+            </select>
+            </div>
+            <div class="text_container">
+                <div class="converted_text">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
