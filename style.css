@@ -30,18 +30,18 @@ body {
     border-radius: 10px;
 }
 .container_center {
-    margin-left: 5px;
+    margin-left: 7px;
     margin-right: 5px;
 }
 .inner_container {
     margin: auto 0;
 }
 .container_left {
-    margin-left: 10px;
+    margin-left: 7px;
     
 }
 .container_right {
-    margin-left: 10px;
+    margin-left: 7px;
 }
 .container_header {
     display: flex;
@@ -81,6 +81,34 @@ select option {
     border-radius: 12px;
     box-shadow: inset 0px 0px 5px 1px #8C8C8C;
 }
+@media only screen and (max-device-width: 1050px) {
+    .text_container {width: 320px;
+    height: 400px;}
+   }
+@media only screen and (max-device-width: 900px) {
+    .text_container {width: 280px;
+    height: 400px;}
+   }
+@media only screen and (max-device-width: 800px) {
+    .text_container {width: 600px;
+    height: 200px;}
+    .container_center {
+        width: 600px;
+        border-top: 1px dashed #ccc;
+        border-bottom: 1px dashed #ccc;
+        border-radius: 0px;
+    } 
+   }
+@media only screen and (max-device-width: 600px) {
+    .text_container {width: 380px;
+    height: 200px;}
+    .container_center {
+        width: 400px;
+        border-top: 1px dashed #ccc;
+        border-bottom: 1px dashed #ccc;
+        border-radius: 0px;
+    }  
+   }
 textarea {
     width: 100%;
     height: 100%;
