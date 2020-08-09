@@ -3,14 +3,16 @@
 }
 body {
     max-width: 1000px;
+    min-width: 440px;
     margin: 20px auto;
     background-color: #F2A2B1; /* #BF9788; */
     font-family: 'Roboto', sans-serif;
 }
 .main_container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #eee;
     /* border: 2px dashed #aaa; */
     border-radius: 15px;
@@ -35,10 +37,11 @@ body {
     margin: auto 0;
 }
 .container_left {
+    margin-left: 10px;
     
 }
 .container_right {
-    
+    margin-left: 10px;
 }
 .container_header {
     display: flex;
