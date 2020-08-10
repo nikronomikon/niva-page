@@ -75,9 +75,9 @@ select option {
     height: 400px;
     padding: 10px;
     background-color: #fff;
-    border: 2px solid #666;
+    /* border: 2px solid #666; */
     border-radius: 12px;
-    box-shadow: inset 0px 0px 5px 1px #8C8C8C;
+    box-shadow: inset 0px 0px 5px -1px #8C8C8C;
 }
 #frsong {
     width: 20px;
@@ -91,12 +91,12 @@ select option {
     
 }
 
-@media only screen and (max-device-width: 1050px) {
-    .text_container {width: 320px;
+@media only screen and (max-device-width: 990px) {
+    .text_container {width: 390px;
     height: 400px;}
    }
 @media only screen and (max-device-width: 900px) {
-    .text_container {width: 280px;
+    .text_container {width: 320px;
     height: 400px;}
    }
 @media only screen and (max-device-width: 800px) {
@@ -109,8 +109,8 @@ select option {
         border-radius: 0px;
     } 
    }
-@media only screen and (max-device-width: 600px) {
-    .text_container {width: 380px;
+@media only screen and (max-device-width: 630px) {
+    .text_container {width: 400px;
     height: 200px;}
     .container_center {
         width: 400px;
