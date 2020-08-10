@@ -19,8 +19,7 @@ let convertClickFunc = () => {
         existDiv.innerHTML = converteredText;
         div.classList.add('magic_effect_invert');
         setTimeout(() => div.classList.remove('magic_effect_invert'), 2000)
-    }
-    
+    }  
 }
 let songfunc = () => {
     let song = document.getElementById('input_text');
@@ -44,9 +43,5 @@ let setColor = () => {
             existingDiv.style.color = '#2E97F2'
         } else if (color.value == "coral") {
             existingDiv.style.color = 'coral'
-        }
-
+        }     
 }
-
-
-// </br>Новый <i>текст</i> он <b>важный</b> самый!
