@@ -2,8 +2,10 @@ let convertClickFunc = () => {
     let text = document.getElementById('input_text');
     text.classList.add('magic_effect');
     setTimeout(() => text.classList.remove('magic_effect'), 2000);
+    
     let converteredEl = document.getElementsByClassName('converted_text')[0];
     let converteredText = text.value;
+    
     if (document.getElementsByClassName('new_element')[0] === undefined)  // для проверки дочерних узлов - elem.hasChildNodes()
     {
         let div = document.createElement('div');
@@ -21,6 +23,7 @@ let convertClickFunc = () => {
         setTimeout(() => div.classList.remove('magic_effect_invert'), 2000)
     }  
 }
+
 let songfunc = () => {
     let song = document.getElementById('input_text');
     song.value = '<h1 style="padding-left: 10px; background-color: #F2A2B1; border-radius: 5px; color: white;">Famous Russian song</h1>\n<div style="margin-left: 10px;">\n<h3>All together</h3>\n</br>Карусель, карусель начин<i>а-а-а-</i>ет рассказ.<br>\nЭто сказки, песни и веселье!<br>\nКарусель, карусель — это р<i>а-а-а-</i>дость для нас,<br>\nПрокатись на нашей карус<i>e-e-e-e-e-e-</i>ли<b>!</b>\n</div>';
@@ -47,3 +50,10 @@ let setColor = () => {
         
 }
 
+convert_button.addEventListener('click', convertClickFunc);
+
+clear_button_right.addEventListener('click', clearRight);
+
+clear_button_left.addEventListener('click', clearLeft);
+
+colorSelect.addEventListener('click', setColor);
