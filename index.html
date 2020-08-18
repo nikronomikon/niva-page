@@ -11,7 +11,7 @@
     <section class="main_container">
         <div class="child_container container_left">
             <div class=" container_header header_left">
-                <button name="clear_button_left" id="clear_button_left" onclick="clearLeft()">Clear</button>
+                <button name="clear_button_left" id="clear_button_left">Clear</button> <!-- onclick="clearLeft()" -->
                 <button id="frsong" onclick="songfunc()">?</button>                      
             </div>
             <div class="text_container input_text">
@@ -20,13 +20,13 @@
         </div>
         <div class="child_container container_center">
             <div class="inner_container">
-               <button id="convert_button" onclick="convertClickFunc()">Convert</button> 
+               <button id="convert_button">Convert</button> 
             </div>
         </div>
         <div class="child_container container_right">
             <div class="container_header header_right">
-            <button name="clear_button_right" id="clear_button_right" onclick="clearRight()">Clear</button>
-            <select id="colorSelect" name="font_color" onclick="setColor()">
+            <button name="clear_button_right" id="clear_button_right">Clear</button>  <!-- onclick="clearRight()" -->
+            <select id="colorSelect" name="font_color" > <!-- onclick="setColor()" -->
                 <option disabled selected hidden style="color: lightgrey; font-weight: 700;" >Choose color</option>
                 <option value="black" style="color: black;">Black</option>
                 <option value="blue" style="color: #2E97F2;">Blue</option>
