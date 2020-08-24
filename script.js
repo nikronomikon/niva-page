@@ -37,8 +37,9 @@ let func = () => {
 };
 
 let negPosFunc = (num) => {
-        num = parseInt(num) * (-1);
-        return num;
+        num = num.split('')
+        num[0] == '-' ? num.shift() : num.unshift('-');
+        return num.join('');
 }
 let percentFunc = (num) => {
     num = eval(num) / 100;
