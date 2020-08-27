@@ -8,6 +8,8 @@ let func = () => {
 
     altDisp.classList.add('hidden');
 
+    // display.innerHTML += target.value;
+
     switch (target.id) {
         case 'divide': 
         case 'multiply':
@@ -28,6 +30,23 @@ let func = () => {
             altDisp.classList.remove('hidden');
             altDisp.innerHTML = '0';
             break;
+        case 'point':
+            switch (display.innerHTML.substring(display.innerHTML.length-1)) {
+                case '+':
+                case '-':
+                case '/':
+                case '*':
+                    display.innerHTML = pushZero(display.innerHTML);
+                    // display.innerHTML += target.value;
+                    break;    
+                default:
+                    break;
+            }    
+        if (display.innerHTML.substring(display.innerHTML.length-1) != 0) {
+                display.innerHTML.push
+            }
+            display.innerHTML += target.value;
+            break;
         case 'result':
             display.innerHTML = resultFunc(display.innerHTML);
             break;
@@ -36,6 +55,11 @@ let func = () => {
             break;
       }
 };
+let pushZero = (num) => {
+    num = num.split('');  
+    num.push('0');  
+    return num = num.join('');
+}
 
 let percentFunc = (num) => {
     num = eval(num) / 100;
@@ -60,12 +84,10 @@ let resultFunc = (num) => {
         default:
             num = Math.round(eval(num)*100)/100;
             return num;
-            break;    
-
+            break;
     }
     num = Math.round(eval(num)*100)/100;
     return num;
 }
 
 calc.addEventListener('click', func);
-
