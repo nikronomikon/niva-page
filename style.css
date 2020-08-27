@@ -105,11 +105,7 @@ h1 {
     cursor: pointer;
     outline: none;    
 }
-.input_container .clear-button {
-    background-color: #FFC42E;
-    color: #3B3B3B;
-}
-.input_container .math-button {
+#calc .math-button {
     color: #FFC42E;
     /* background-color: #FFC42E; */
 }
@@ -117,10 +113,8 @@ h1 {
 .button:hover{
     outline: none;
     border: none;
-    filter: drop-shadow( 0px 1px 2px #DCDCDC);
-    
+    filter: drop-shadow( 0px 1px 2px #DCDCDC);  
 }
-
 .big {
     grid-column: span 2;
 }
