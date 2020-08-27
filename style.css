@@ -7,7 +7,7 @@ body {
 }
 .main_container {
     width: 320px;
-    min-height: 460px;
+    min-height: 480px;
     margin: 0px auto;
     background-color: #7A7A7A;
     border-radius: 20px;
@@ -46,8 +46,11 @@ h1 {
     font-weight: 400;
 }
 .output {
+    max-width: 320px;
+    text-overflow: ellipsis;
     display: grid;
     justify-items: end;
+    white-space: nowrap;
     padding: 0px 5px 0px 0px;
     color: #E6E6E6;
     font-size: 36px;
@@ -61,10 +64,34 @@ h1 {
     gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 }
-
-.button {
+.button-block {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+}
+#clear,
+#backspace  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    background-color: #3B3B3B;
+    border: none;
+    border-radius: 5px;
+    color: #E6E6E6;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;  
+}
+#clear {
+    background-color: #FFC42E;
+    color: #3B3B3B;
+}
+#calc > .button {
     min-width: 60px;
     min-height: 60px;
+    max-height: 90px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 32px;
