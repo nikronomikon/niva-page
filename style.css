@@ -6,11 +6,11 @@ body {
     
 }
 .main_container {
-width: 320px;
-min-height: 460px;
-margin: 0px auto;
-background-color: #7A7A7A;
-border-radius: 20px;
+    width: 320px;
+    min-height: 460px;
+    margin: 0px auto;
+    background-color: #7A7A7A;
+    border-radius: 20px;
 }
 h1 {
     text-align: center;
